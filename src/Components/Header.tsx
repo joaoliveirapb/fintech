@@ -1,7 +1,18 @@
+import { useDataContext } from '../Context/DataContext'
+import { DateRange } from './DateRange'
+import { Months } from './Months'
+
 export function Header() {
+  const { data } = useDataContext()
+
+  console.log(data)
+
   return (
-    <header>
-      <h1>Header</h1>
+    <header className="mb">
+      <div className="mb">
+        <DateRange />
+      </div>
+      <Months />
     </header>
   )
 }
