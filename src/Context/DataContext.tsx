@@ -8,7 +8,7 @@ import {
 } from 'react'
 import { useFetch } from '../Hooks/useFetch'
 
-interface SaleProps {
+export interface SaleProps {
   id: string
   nome: string
   preco: number
